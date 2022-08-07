@@ -1,0 +1,38 @@
+<div class="container">
+    <h3>Login</h3>
+    <div class="Loginform">
+        <form [formGroup]="loginForm">
+            <div class="form-group">
+                
+                    <label for="Email"></label>
+                    <input type="text" id="Email" class="form-control" name="Email" formControlName="EmailId" required >
+                    <span>please enter Email Id</span>
+                    <span *ngIf="loginForm.touched">Email Id invalid</span>
+              
+                <div>
+                    <label for="Password"></label>
+                    <input type="text" id="Password" class="form-control" name="Password" formControlName="Password" required >
+                    <span>Please enter Password</span>
+                </div>
+                <div>
+                    <button id="btnsave" name="btnsave" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-success" (click)="saveData()">Save</button>&nbsp;&nbsp;
+                    <button id="btnreset" name="btnrst" class="btn btn-danger"  >Reset</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="model-title">
+                    Login
+                </div>
+                <div class="modal-body">
+                    <h3>Welcome to Login</h3>
+                </div>
+              </div>
+            </div>
+        </div>
+ 
+

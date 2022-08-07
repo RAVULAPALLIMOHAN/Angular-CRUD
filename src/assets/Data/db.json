@@ -1,0 +1,22 @@
+{
+    "mohan":[
+        {"id":1,
+        "title":"json server",
+        "Project":"Anglar",
+        "Duration":"6 Months",
+        "location" :"Local"
+    },
+    {"id":2,
+        "title":"sql server",
+        "Project":".Net",
+        "Duration":"12 Months",
+        "location" :"Hyd"
+    },
+    {"id":3,
+        "title":"oracle server",
+        "Project":"Jave",
+        "Duration":"8 Months",
+        "location" :"Hyd"
+    }
+    ]
+}
