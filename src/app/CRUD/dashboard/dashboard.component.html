@@ -73,8 +73,8 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" id="cancel" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" *ngIf="btnAdd" (click)="postEmployeeDetails()">Add</button>
-          <button type="button" class="btn btn-primary" *ngIf="btnUpdate" (click)="updateEmployeeDetails()">Update</button>
+          <button type="button" class="btn btn-primary" *ngIf="btnAction" (click)="postEmployeeDetails()">Add</button>
+          <button type="button" class="btn btn-primary" *ngIf="!btnAction" (click)="updateEmployeeDetails()">Update</button>
         </div>
       </div>
     </div>
