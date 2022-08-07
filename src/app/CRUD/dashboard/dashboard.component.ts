@@ -13,8 +13,7 @@ export class DashboardComponent implements OnInit {
   formValue !:FormGroup;
   EmployeeData !: any;
   EmployeeModelObj : EmployeeModel = new EmployeeModel();
-  btnAdd :boolean=false;
-  btnUpdate :boolean = false;
+  btnAction :boolean=true;
   constructor(private formBuilder:FormBuilder,private api:CRUDService) { }
 
   ngOnInit(): void {
@@ -66,8 +65,7 @@ export class DashboardComponent implements OnInit {
    }
 
    onEdit(row:any){
-    this.btnUpdate =true;
-    this.btnAdd=false;
+    this.btnAction =false;
     this.EmployeeModelObj.id = row.id;
     this.formValue.controls['first'].setValue(row.first);
     this.formValue.controls['last'].setValue(row.last);
@@ -78,8 +76,7 @@ export class DashboardComponent implements OnInit {
 
    addEmp(){
     this.formValue.reset();
-    this.btnAdd =true;
-    this.btnUpdate =false;
+    this.btnAction =true;
    }
    updateEmployeeDetails(){
     this.EmployeeModelObj.first = this.formValue.value.first;
