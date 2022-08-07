@@ -1,0 +1,15 @@
+.title {
+    color: blue;
+    background-color: aliceblue;
+  padding-top: 20px;
+    text-align: center;
+    height: 50px;
+    vertical-align:middle;
+    margin-top:20px;
+}
+a{
+  color:aquamarine;
+  margin-left: 10px;
+  font-size: 12px !important;
+
+}

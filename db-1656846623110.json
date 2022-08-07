@@ -1,0 +1,20 @@
+{
+  "login": [
+    {
+      "id": 1,
+      "first": "Name",
+      "last": "Name",
+      "email": "mohancvls",
+      "mobile": "mobile",
+      "sal": "salary"
+    },
+    {
+      "id": 2,
+      "first": "Mohan",
+      "last": "Ravulapalli",
+      "email": "mohan.ravulapalli@valuemomentum.in",
+      "mobile": "8331837996",
+      "sal": "35186"
+    }
+  ]
+}
